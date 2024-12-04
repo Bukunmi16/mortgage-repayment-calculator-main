@@ -342,6 +342,7 @@ input:focus{
 .results-page-2{
     background-color: hsl(202, 55%, 16%);
     /* display: flex; */
+    height: 60%;
     flex-direction: column;
     padding:30px; 
 }
