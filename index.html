@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Mortgage Repayment Calculator</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+<section class="whole-page">
+  <div class="calculator">
+    <div class="heading">
+      <h3>
+        Mortgage Calculator
+      </h3>
+      <button onclick="erase()" class="erase">
+        Clear All
+      </button>
+    </div>
+    <div class="form">
+      <div class="amount">
+        <p>Mortgage Amount</p>
+        <div class="amount-input">
+        <p class="placeholder">£</p>
+        <input id="input" style="
+         width: 100%;
+         padding-left: 10px;
+         " class="input-amount" type="text">
+        </div>
+        <div style="display: none;" class="required">This field is required</div>
+
+      </div>
+      
+      <span class="term-and-rate">
+      <div class="term">
+        <p>Mortgage Term</p>
+        <div class="term-input">
+        <p class="placeholder">years</p>
+        <input id="input"  class="input-term" type="number">
+        </div>
+        <div style="display: none;" class="required">This field is required</div>
+
+      </div>
+      <div class="rate">
+        <p>Interest Rate</p>
+        <div class="rate-input">
+          <p class="placeholder">%</p>
+          <input id="input" class="input-rate" type="number">
+        </div>
+        <div style="display: none;" class="required">This field is required</div>
+
+      </div>
+    </span>
+
+      <div class="checkbox-list">
+        <p class="type">Mortgage Type</p>
+      
+      <div class="labels">
+        <label class="checkbox1" for="checkbox1"> 
+          <input id="checkbox1"  name="option" type="checkbox" >Repayment
+      </label>
+        <label class="checkbox2" for="checkbox2"> 
+          <input id="checkbox2"  name="option" type="checkbox" >Interest Only
+      </label>
+      </div>
+        <div style="display: none;" class="required">This field is required</div>
+      </div>
+
+
+      <button onclick="calculate()" class="calc-btn">
+        <img src="assets/images/icon-calculator.svg" alt="calculator-icon" class="calc-icon">
+        <p> Calculate Repayments</p>
+      </button>
+      </div>
+    </div>
+      
+            <div  class="results">
+            <img src="assets/images/illustration-empty.svg" alt="">
+            <h3>Results shown here</h3>
+            <p>Complete the form and click “calculate repayments” to see what 
+              your monthly repayments would be.</p>
+            </div>
+            
+            <div  class="results-page-2">
+              <div class="your-results">
+                <h4>Your results</h4>
+                <p> Your results are shown below based on the information you provided. 
+                  To adjust the results, edit the form and click “calculate repayments” again.
+                </p>
+              </div>
+              <div class="results-in-digits">
+                <div class="monthly-repayments-result">
+                  <p>Your monthly repayments</p>
+                  <h2>£<span class="monthly-repayment">0.00</span></h2>
+                </div>
+                <div class="total-over-time">
+                  <p>Total you'll repay over the term</p>
+                  <h4>£<span class="accumulated-payment">0.00</span></h4>
+                </div>
+              </div>
+            </div>
+</section>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Bukunmi Adigun</a>.
+  </div> -->
+
+  <script src="index.js"></script>
+</body>
+</html>
