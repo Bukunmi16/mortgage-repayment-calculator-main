@@ -342,8 +342,9 @@ input:focus{
 .results-page-2{
     background-color: hsl(202, 55%, 16%);
     /* display: flex; */
-    height: 60%;
+    height: 50vh;
     flex-direction: column;
+    justify-content: space-evenly;
     padding:30px; 
 }
 .your-results{
@@ -352,7 +353,7 @@ input:focus{
     display: flex;
     flex-direction: column;
     color: white;
-    height: 22%;
+    height: 30%;
     justify-content: space-between;
     margin-bottom: 30px;
 }
@@ -366,6 +367,7 @@ input:focus{
 }
 .results-in-digits{
     width: 100%;
+    /* padding: 10px; */
     border-top: 5px solid hsl(61, 70%, 52%);;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
@@ -373,13 +375,19 @@ input:focus{
     border-bottom-left-radius: 10px;
     display: flex;
     flex-direction: column;
-    height: 60%;
+    justify-content: center;
+    height: 50%;
     background-color: hsl(201, 55%, 10%);
 }
 .monthly-repayments-result{
     border-bottom: 1px solid hsl(200, 18%, 25%);;
-    height: 60%;
-    margin: 20px;
+    /* border: 1px solid red; */
+    height: 30%;
+    /* margin: 20px; */
+    margin-left: 20px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;
+    margin-right: 20px;
 }
 
 .monthly-repayments-result p{
@@ -394,7 +402,7 @@ input:focus{
 
 .total-over-time{
     /* border: 1px solid red; */
-    height: 40%;
+    height: 20%;
     margin: 20px;
     margin-top: 0;
     display: flex;
@@ -405,6 +413,7 @@ input:focus{
 .total-over-time h4{
     font-size: 1rem;
     color: white;
+    margin-top: 10px;
 }
 
 .required{
@@ -531,7 +540,9 @@ body{
     .monthly-repayments-result h2{
         font-size: 1.5rem;
     }
-    .monthly-repayments-result {
+}
+@media screen and (max-width: 199px) { 
+.monthly-repayments-result {
         overflow: hidden;
     }
     .total-over-time{
