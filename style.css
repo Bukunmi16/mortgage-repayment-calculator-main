@@ -502,6 +502,7 @@ body{
 .results-page-2{
     max-width: 45%;
     width: 100%;
+    height: initial;
     background-color: hsl(202, 55%, 16%);
     /* border: 1px solid black; */
     display: flex;
