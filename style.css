@@ -70,7 +70,7 @@ input:focus{
 
 .results{
     border: 1px solid green;
-    height: 40%;
+    height: 50%;
     background-color: hsl(202, 55%, 16%);
     padding: 15px;
 }
